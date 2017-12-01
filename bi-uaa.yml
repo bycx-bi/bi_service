@@ -2,9 +2,9 @@ spring:
   datasource:
     type: org.apache.tomcat.jdbc.pool.DataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/business_intelligence?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: 123456
+    url: jdbc:mysql://10.47.61.175:3306/business_intelligence?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: Developer
+    password: '{cipher}ee9ee4bcaf942314b8ce9bf4b66ca8439db1c8754f75b9f943e744a28fc2eb4776838c55604662ae200e54d0b0a4b82255af7f45d0c79644eab619a4dca287ed'
   jpa:
     properties:
       hibernate:
