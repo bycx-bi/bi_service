@@ -35,9 +35,9 @@ spring:
   datasource:
     type: org.apache.tomcat.jdbc.pool.DataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/business_intelligence?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: 123456
+    url: jdbc:mysql://10.47.61.175:3306/business_intelligence?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: Developer
+    password: '{cipher}ee9ee4bcaf942314b8ce9bf4b66ca8439db1c8754f75b9f943e744a28fc2eb4776838c55604662ae200e54d0b0a4b82255af7f45d0c79644eab619a4dca287ed'
 ribbon:
   # 配置ribbon超时时间
   ConnectTimeout: 5000
@@ -90,14 +90,14 @@ custom:
     names: offline-mysql,offline-oracle
     offline-mysql:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/business_intelligence
-      username: root
-      password: 123456
-    offline-oracle:
+      url: jdbc:mysql://10.27.113.75:3306/bycx_bi
+      username: bycx_bi
+      password: bycx_bi
+    online:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/business_intelligence
-      username: root
-      password: 123456
+      url: jdbc:mysql://rr-bp1lvuaxx414eav97o.mysql.rds.aliyuncs.com:3306/tk_online
+      username: ol_read
+      password: eETq0kKYXzBM97
 mybatis:
   typeAliasesPackage: com.dongnaoedu.springcloud.*.*.dao
   mapperLocations: classpath:/mybatis/mapper/*/*.xml
