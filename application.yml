@@ -24,8 +24,8 @@ spring:
       # 1、采样比例
       percentage: 1.0
   # 2、接口调用信息推送到这个zipkin服务
-  zipkin: 
-    base-url: http://120.26.118.194:9411
+  #zipkin: 
+    #base-url: http://120.26.118.194:9411
 
   cloud:
     loadbalancer:
