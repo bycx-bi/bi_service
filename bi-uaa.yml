@@ -11,4 +11,6 @@ spring:
         hbm2ddl:
           # 自动创建表
           auto: update
-    
+mybatis:
+  typeAliasesPackage: classpath:com.dongnao.springcloud.uaa.dao
+  mapperLocations: classpath:/mybatis/mapper/*/*.xml
