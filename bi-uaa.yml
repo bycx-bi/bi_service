@@ -5,6 +5,14 @@ spring:
     url: jdbc:mysql://10.47.61.175:3306/business_intelligence?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: Developer
     password: 69e78a08-6df8-11e7-a350-00163e013527
+    max-idle: 10
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5
+    validation-query: SELECT 1
+    test-on-borrow: false
+    test-while-idle: true
+    time-between-eviction-runs-millis: 18800
 mybatis:
   typeAliasesPackage: classpath:com.dongnao.springcloud.uaa.dao
   mapperLocations: classpath:/mybatis/mapper/*/*.xml
