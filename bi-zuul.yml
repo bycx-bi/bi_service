@@ -30,6 +30,11 @@ zuul:
       path: /token/byPhone
       # 这里表示，这个路由的实例信息，是通过ribbon负载均衡器进行获取的。值就是对应服务名
       serviceId: bi-uaa
+    sys-menu:
+      # 指定这个路径会匹配到这个路由。
+      path: /sys/getMenuList
+      # 这里表示，这个路由的实例信息，是通过ribbon负载均衡器进行获取的。值就是对应服务名
+      serviceId: bi-scope
 ####################结束路由配置################################### 
 
 ####################这里开始是filter相关配置################################### 
@@ -77,3 +82,4 @@ tony:
     tokenFilter:
       noAuthenticationRoutes: 
         - uaa-token
+        - sys-menu
